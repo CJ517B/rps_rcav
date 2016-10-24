@@ -1,12 +1,32 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <title>RockPaperScissors</title>
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.css" media="screen" title="no title">
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="btn-group btn-group-justified" >
+          <a href="http://localhost:3000/rock" class="btn btn-primary btn-block">Play Rock<span class="sr-only">(current)</span></a>
+          <a href="http://localhost:3000/paper" class="btn btn-block btn-primary">Play Paper<span class="sr-only">(current)</span>
+          </a>
+          <a href="http://localhost:3000/scissors" class="btn btn-block btn-primary">Play Scissors<span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
 
 <%= yield %>
 
