@@ -53,7 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
+  root "game#user_plays_rock"
+  
   get("/rock",{:controller => "game", :action => "user_plays_rock"}) #get("a string we expect them to type in",[hash])
 
   get("/paper",{:controller => "game", :action => "user_plays_paper"})
